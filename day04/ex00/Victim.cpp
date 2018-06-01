@@ -1,5 +1,4 @@
 #include "Victim.hpp"
-#include <iostream>
 
 Victim::Victim( std::string n )
 {

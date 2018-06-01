@@ -1,5 +1,4 @@
 #include "Peon.hpp"
-#include <iostream>
 
 Peon::Peon( std::string n ) : Victim(n)
 {

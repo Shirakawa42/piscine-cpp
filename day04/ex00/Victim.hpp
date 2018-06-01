@@ -3,7 +3,7 @@
 # define VICTIM_HPP
 
 #include <string>
-#include <ostream>
+#include <iostream>
 
 class	Victim
 {
