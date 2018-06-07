@@ -1,31 +1,31 @@
 #include "span.hpp"
 
-span::span()
+Span::Span()
 {
 	_tab.reserve(0);
 }
 
-span::span(unsigned int n)
+Span::Span(unsigned int n)
 {
 	_tab.reserve(n);
 }
 
-span::~span()
+Span::~Span()
 {
 }
 
-span::span( const span & cpy )
+Span::Span( const Span & cpy )
 {
 	*this = cpy;
 }
 
-span &	span::operator = ( const span & cpy )
+Span &	Span::operator = ( const Span & cpy )
 {
 	_tab = cpy._tab;
 	return *this;
 }
 
-void	span::addNumber(int i)
+void	Span::addNumber(int i)
 {
 	if (_tab.size() < _tab.capacity())
 		_tab.push_back(i);
@@ -33,7 +33,7 @@ void	span::addNumber(int i)
 		throw std::overflow_error("Can't store more");
 }
 
-int		span::shortestSpan()
+int		Span::shortestSpan()
 {
 	std::vector<int>	tmp = _tab;
 
@@ -44,7 +44,7 @@ int		span::shortestSpan()
 	return	0;
 }
 
-int		span::longestSpan()
+int		Span::longestSpan()
 {
 	return	*std::max_element(_tab.begin(), _tab.end()) -
 			*std::min_element(_tab.begin(), _tab.end());

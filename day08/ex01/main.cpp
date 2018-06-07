@@ -3,7 +3,7 @@
 
 int		main()
 {
-	span	sp = span(20000);
+	Span	sp = Span(20000);
 
 	srand(time(NULL));
 	for (int i = 0 ; i < 20000 ; i++)
@@ -19,7 +19,7 @@ int		main()
 	std::cout << sp.shortestSpan() << std::endl;
 	std::cout << sp.longestSpan() << std::endl << std::endl;
 
-	span	sp2 = span(5);
+	Span	sp2 = Span(5);
 
 	sp2.addNumber(5);
 	sp2.addNumber(3);
@@ -30,14 +30,14 @@ int		main()
 	std::cout << sp2.shortestSpan() << std::endl;
 	std::cout << sp2.longestSpan() << std::endl << std::endl;
 
-	span	sp3 = span(1);
+	Span	sp3 = Span(1);
 
 	sp3.addNumber(3);
 
 	std::cout << sp3.shortestSpan() << std::endl;
 	std::cout << sp3.longestSpan() << std::endl << std::endl;
 
-	span	sp4 = span();
+	Span	sp4 = Span();
 
 	std::cout << sp3.shortestSpan() << std::endl;
 	std::cout << sp3.longestSpan() << std::endl;

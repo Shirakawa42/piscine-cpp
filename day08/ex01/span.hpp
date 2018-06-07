@@ -7,14 +7,14 @@
 #include <vector>
 #include <algorithm>
 
-class	span
+class	Span
 {
 	public:
-		span();
-		span(unsigned int n);
-		~span();
-		span( const span & );
-		span &	operator = ( const span & );
+		Span();
+		Span(unsigned int n);
+		~Span();
+		Span( const Span & );
+		Span &	operator = ( const Span & );
 		void	addNumber(int);
 		int		shortestSpan();
 		int		longestSpan();
